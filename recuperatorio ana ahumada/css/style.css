@@ -1,0 +1,404 @@
+/* PARA TODA LA PAGINA EN CUALQUIER TAMANIO*/
+body , header , section , footer{
+    padding: 0px;
+    margin: 0px;
+}
+h1{
+    font-family: 'Livvic', sans-serif;
+    color: #ffffff;
+    margin: 0%;
+}
+p{
+    color: #FFFFFF;
+    display: flex;
+}
+
+/*COLORES DE FONDO*/
+footer , .dos{
+    background-color: #004047;
+}
+header , .uno , .tres{
+    background-color: #2c6269; 
+}
+.cuatro{
+    background-color: #f67e7e;
+}
+
+/*  midnightGreen: #014e56;
+--lightCoral: 
+--white: #ffffff;
+--raptureBlue: #79c8c7;
+--policeBlue: #2c6269;
+--jungleGreen: #004047;
+--sacramentoGreen: #012f34;
+--darkGreen: #002529;
+--robinBlue: #c4fffe;  */
+
+/*BOTON*/
+.boton{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    gap: 5px;
+    width: 134px;
+    height: 25px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border: 1px solid #ffffff;
+    color: #FFFFFF;
+    align-items: flex-start
+
+}
+.bo{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center
+}
+
+/*CONTENEDORES DE HEADER*/
+.conteiner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5%;
+}
+.conteiner2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: flex-end;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+}
+.Hambur{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+nav{
+    padding: 20px;
+}
+
+
+
+/* SECCION UNO (PRIMERA SECCION DE LA PAGINA) */
+.uno{
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+    justify-content: space-evenly;
+}
+.colorcito{
+    color: #f67e7e;
+}
+.uno p{
+    display: flex;
+    padding: 0%;
+    justify-content: space-evenly;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+.uno h1{
+    font-size: 50px;
+    text-align: center;
+}
+.parrafouno{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+}
+
+
+/* SECCION DOS (SEGUNDA SECCION DE LA PAGINA) */
+.dos{
+    display: flex;
+    margin: 0px;
+    flex-direction: row;
+}
+.dos h1{
+    font-size: 50px;
+    display: flex;
+    padding: 10%;
+    align-items: flex-start;
+}
+.herramientas{
+    display: flex;
+    flex-direction: row;
+    padding: 0%;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5px;
+}
+.texto h3{
+    color: #f67e7e;
+}
+.conteiner3{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+.titulodos{
+    display: flex;
+    padding: 0%;
+}
+
+/* SECCION TRES (TERCERA SECCION DE LA PAGINA) */
+.tres{
+    display: flex;
+    flex-direction: column;
+}
+.personas{
+    display: flex;
+    flex-direction: row;
+}
+
+.color{
+    color: aqua;
+}
+.tres h1{
+    text-align: center;
+    padding: 5%;
+    font-size: 40px;
+}
+.personas{
+    padding: 5%;
+}
+.image img{
+    border-radius: 100%;
+}
+.image{
+    display: flex;
+    justify-content:space-around;
+}
+.texto2s p{
+    display: flex;
+    text-align: center;
+    width: 90%;
+}
+.subT{
+    display: flex;
+    justify-content: space-around;
+    color: aqua;
+}
+.sub{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ARTICULO CUATRO */
+.cuatro{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.cuatro .boton{
+    border: 1px solid #004047;   
+    padding: 5%;
+}
+.cuatro .boton a{
+    color: #004047;
+}
+.cuatro h1{
+    padding:5%;
+    color: #004047;
+}
+
+/*PIE DE PAGINA*/
+footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+.piepagina{
+    display: flex;
+    flex-direction: column;
+}
+.textopiepagina{
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    align-items: center;
+}
+.cop{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: flex-end
+}
+
+
+
+
+/*TPARA CELULAR . RESPONSIVE*/
+@media(max-width:515px) {
+    body , header , section , footer{
+        padding: 0px;
+        margin: 0px;
+    }
+/*HEADER Y US ELEMENTOS*/
+    header{
+        display: flex;
+        flex-direction: row;
+    }
+   
+    .Hambur{
+        display: none;
+    }
+    .conteiner2{
+        align-items: center
+    }
+
+/*SECCION UNO(PRIMENRA SECCION) Y US ELEMENTOS*/
+    .uno{
+        display: flex;
+        flex-direction: column;
+    }
+    .parrafouno{
+        display: flex;
+        text-align: center;
+        margin: 0%;
+    }
+
+/*SECCION DOS(SEGINDA SECCION) Y SUS ELEMENTOS*/
+    .dos{
+        display: flex;
+        flex-direction: column;
+    }
+    .titulodos{
+        text-align: center;
+    }
+    .personas{
+        display: flex;
+        flex-direction: column;
+    }
+    .herramientas{
+        display: flex;
+        flex-direction: column;
+    }
+    .texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .texto p{
+        text-align: center;
+    }
+
+    
+/*PIE DE PAGINA Y SUS ELEMENTOS*/
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .bo{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*TPARA CELULAR . RESPONSIVE*/
+@media(max-width:376px) {
+    body , header , section , footer{
+        padding: 0px;
+        margin: 0px;
+    }
+/*HEADER Y US ELEMENTOS*/
+    header{
+        display: flex;
+        flex-direction: row;
+    }
+    nav {
+        display: none;
+    }
+    header .boton{
+        display: none;
+    }
+    .Hambur{
+        display: flex;
+    }
+    .conteiner2{
+        align-items: center
+    }
+
+/*SECCION UNO(PRIMENRA SECCION) Y US ELEMENTOS*/
+    .uno{
+        display: flex;
+        flex-direction: column;
+    }
+    .parrafouno{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin: 0%;
+    }
+
+/*SECCION DOS(SEGINDA SECCION) Y SUS ELEMENTOS*/
+    .dos{
+        display: flex;
+        flex-direction: column;
+    }
+    .titulodos{
+        text-align: center;
+    }
+    .personas{
+        display: flex;
+        flex-direction: column;
+    }
+    .herramientas{
+        display: flex;
+        flex-direction: column;
+    }
+    .texto{
+        display: flex;
+        flex-direction: column;
+    }
+
+/*ARTICULO CUATRO Y SUS ELEMENTOS*/
+    .cuatro{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .boton{
+    display: flex;
+    justify-content: center;
+}
+/*PIE DE PAGINA Y SUS ELEMENTOS*/
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.textopiepagina{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.textopiepagina p{
+    text-align: center;
+
+}
+.cop{
+    display: flex;
+    text-align: center;
+    align-content: space-around;
+    align-items: center;
+}
+.iconospiepagina{
+    display: flex;
+    
+}
+}
